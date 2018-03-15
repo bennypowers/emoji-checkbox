@@ -1,6 +1,6 @@
 {
   "name": "@power-elements/emoji-checkbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Super Semantic Checkbox with ✔️  Emoji!",
   "main": "emoji-checkbox",
   "scripts": {
