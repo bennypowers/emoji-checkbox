@@ -1,0 +1,29 @@
+{
+  "name": "@power-elements/emoji-checkbox",
+  "version": "1.0.0",
+  "description": "Super Semantic Checkbox with ✔️  Emoji!",
+  "main": "emoji-checkbox",
+  "scripts": {
+    "test": "polymer test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bennypowers/emoji-checkbox.git"
+  },
+  "keywords": [
+    "custom element",
+    "lit-html",
+    "emoji",
+    "checkbox",
+    "semantic"
+  ],
+  "author": "Benny Powers",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bennypowers/emoji-checkbox/issues"
+  },
+  "homepage": "https://github.com/bennypowers/emoji-checkbox#readme",
+  "dependencies": {
+    "@polymer/lit-element": "^0.2.2"
+  }
+}
