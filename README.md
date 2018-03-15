@@ -14,5 +14,6 @@ npm i -S @power-elements/emoji-checkbox
 
 ## Use It! 💪
 ```html
-<emoji-checkbox full="😎" empty="💩" label="favourite"></emoji-checkbox>
+<emoji-checkbox full="😎" empty="💩"
+                label="favourite" value="favourite"></emoji-checkbox>
 ```
