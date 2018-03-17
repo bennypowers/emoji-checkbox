@@ -21,6 +21,16 @@ class EmojiCheckbox extends LitElement {
     };
   }
 
+  _propertiesChanged(props, changedProps, prevProps) {
+    const {checked} = props;
+    this.dispatchEvent(new CustomEvent('checked-changed', {
+      bubbles: true,
+      composed: true,
+      detail: {value: checked}
+    }));
+    super._propertiesChanged(props, changedProps, prevProps)
+  }
+
   render({checked, empty, full, label, value}) {
     return html`
     <style>
@@ -76,7 +86,11 @@ class EmojiCheckbox extends LitElement {
 
     </style>
 
-    <input id="input" type="checkbox" checked?="${checked}" value="${value}"/>
+    <input id="input"
+        type="checkbox"
+        checked?="${checked}"
+        on-change="${event => this.checked = event.target.checked}"
+        value="${value}"/>
     <label for="input">${label}</label>
     `;
   }
